@@ -1,0 +1,143 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode/group_membership_MultiAndUnifiTemp.prj" location="/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode" name="group_membership_MultiAndUnifiTemp" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>group_membership_MultiAndUnifiTemp</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/group_membership_MultiAndUnifiTemp/</param.installpath.string>
+    <param.installpath.combo>option.installpath.user</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MCR_ROOT by the directory where the MATLAB Runtime is installed on the target machine.
+
+(1) Set the environment variable XAPPLRESDIR to this value:
+
+    MCR_ROOT/v901/X11/app-defaults
+
+
+(2) If the environment variable LD_LIBRARY_PATH is undefined, set it to the concatenation of the following strings:
+
+    MCR_ROOT/v901/runtime/glnxa64:
+    MCR_ROOT/v901/bin/glnxa64:
+    MCR_ROOT/v901/sys/os/glnxa64:
+    MCR_ROOT/v901/sys/opengl/lib/glnxa64
+
+    If it is defined, set it to the concatenation of these strings:
+
+    ${LD_LIBRARY_PATH}: 
+    MCR_ROOT/v901/runtime/glnxa64:
+    MCR_ROOT/v901/bin/glnxa64:
+    MCR_ROOT/v901/sys/os/glnxa64:
+    MCR_ROOT/v901/sys/opengl/lib/glnxa64</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_testing" name="run_group_membership_MultiAndUnifiTemp.sh" optional="false">/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode/group_membership_MultiAndUnifiTemp/for_testing/run_group_membership_MultiAndUnifiTemp.sh</file>
+      <file location="${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_testing" name="group_membership_MultiAndUnifiTemp" optional="false">/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode/group_membership_MultiAndUnifiTemp/for_testing/group_membership_MultiAndUnifiTemp</file>
+      <file location="${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_testing" name="splash.png" optional="false">/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode/group_membership_MultiAndUnifiTemp/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/group_membership_MultiAndUnifiTemp/for_testing" name="readme.txt" optional="true">/home/longxie/ASHS_7TT2/pipeline_package/MultiTempThkMTLNew/matlabcode/group_membership_MultiAndUnifiTemp/for_testing/readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/share/apps/matlab/R2016a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>2.6.32-696.18.7.el6.x86_64</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
